@@ -1,0 +1,49 @@
+# Docker setup for the Hugo blog.
+#
+#   docker compose up hugo                          # dev server on http://localhost:1313
+#   docker compose run --rm hugo new content/posts/foo.md
+#   docker compose run --rm hugo                    # build to ./public
+#   docker compose run --rm migrate --help          # one-shot migration container
+#
+# A Makefile in the repo root wraps these into shorter commands.
+
+services:
+  # ------------------------------------------------------------------ Hugo
+  # `hugomods/hugo:exts` is the actively-maintained successor to the old
+  # klakegg/hugo image. The `:exts` tag bundles git, Sass, Asciidoctor, etc.
+  hugo:
+    image: hugomods/hugo:exts
+    working_dir: /src
+    volumes:
+      - .:/src
+    ports:
+      - "1313:1313"
+    # Default command boots the dev server with drafts visible.
+    # Override for one-shot calls, e.g.:
+    #   docker compose run --rm hugo version
+    command: >
+      server
+      -D
+      --bind=0.0.0.0
+      --baseURL=http://localhost:1313
+      --appendPort=false
+
+  # --------------------------------------------------------------- Migrate
+  # One-shot Python container that pulls from Drupal JSON:API and writes
+  # Markdown files into ../content/posts and images into ../static.
+  # Tagged with the `tools` profile so it never starts on `docker compose up`.
+  migrate:
+    build:
+      context: ./migrate
+    working_dir: /src/migrate
+    volumes:
+      - .:/src
+    profiles: ["tools"]
+    # Entrypoint = the migration script; pass flags as `command` overrides.
+    # Example:
+    #   docker compose run --rm migrate \
+    #     --base-url https://your-drupal-site.example \
+    #     --bundle article \
+    #     --out ../content/posts \
+    #     --static-dir ../static
+    entrypoint: ["python", "migrate_drupal.py"]

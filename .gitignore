@@ -1,0 +1,19 @@
+# Hugo build output
+/public/
+/resources/_gen/
+.hugo_build.lock
+
+# PaperMod theme is pulled in via `make init` (git clone) or as a submodule.
+# Don't commit the cloned copy:
+/themes/PaperMod/
+
+# Migration artifacts
+/migrate/.venv/
+/migrate/__pycache__/
+/migrate/*.pyc
+/migrate/drupal_dump.json
+
+# Editor / OS
+.DS_Store
+.idea/
+.vscode/
