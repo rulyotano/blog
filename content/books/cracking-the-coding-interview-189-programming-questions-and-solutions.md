@@ -8,7 +8,7 @@ url: /books/cracking-coding-interviews
 cover:
   image: /images/cracking-the-coding-interview-189-programming-questions-and-solutions/cracking.jpg
   alt: 'Cracking the Coding Interview: 189 Programming Questions and Solutions'
-  relative: false
+  relative: true
 ---
 
 Source: [Chat-Gpt](https://chatgpt.com/) ChatGPT

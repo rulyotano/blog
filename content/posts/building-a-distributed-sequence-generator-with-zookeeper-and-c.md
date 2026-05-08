@@ -11,7 +11,7 @@ url: /articles/zookeeper
 cover:
   image: /images/building-a-distributed-sequence-generator-with-zookeeper-and-c/7054d759-4d7a-47c0-9d98-1cc08c10a9ce.png
   alt: Building a Distributed Sequence Generator with ZooKeeper and C#
-  relative: false
+  relative: true
 ---
 
 ## 1. Goal and Motivation
@@ -24,7 +24,7 @@ ZooKeeper is leveraged here to coordinate between all node servers, and to manag
 
 ## References:
 
-* ![GitHub](/images/building-a-distributed-sequence-generator-with-zookeeper-and-c/-181717) [Demo Github Repo](https://github.com/rulyotano/example-sequence-server-zookeeper)
+* [Demo Github Repo](https://github.com/rulyotano/example-sequence-server-zookeeper)
 * [Nice Medium post that helped me to understand what ZooKeeper is](https://bikas-katwal.medium.com/zookeeper-introduction-designing-a-distributed-system-using-zookeeper-and-java-7f1b108e236e)
 * [Nice Zookeeper guide](https://www.tutorialspoint.com/zookeeper/zookeeper_quick_guide.htm)
 * [ZooKeeper Docker Image](https://hub.docker.com/_/zookeeper)
@@ -97,7 +97,7 @@ This section walks you through running and testing the distributed sequence numb
 ### Prerequisites
 
 * Docker and Docker Compose are installed.
-* Clone or download the repo from here: ![GitHub](/images/building-a-distributed-sequence-generator-with-zookeeper-and-c/-181717) [Demo Github Repo](https://github.com/rulyotano/example-sequence-server-zookeeper)
+* Clone or download the repo from here: [Demo Github Repo](https://github.com/rulyotano/example-sequence-server-zookeeper)
 
 ### Step 1: Start ZooKeeper
 

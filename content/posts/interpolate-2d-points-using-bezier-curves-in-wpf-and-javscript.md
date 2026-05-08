@@ -11,7 +11,7 @@ url: /blog/article/wpf-bezier-interpolation
 cover:
   image: /images/interpolate-2d-points-using-bezier-curves-in-wpf-and-javscript/interpolation-bezier-curves.gif
   alt: Interpolate 2D Points Using Bezier Curves in WPF (and Javscript)
-  relative: false
+  relative: true
 ---
 
 * [**[Original Article]**](https://main.codeproject.com/articles/Interpolate-2D-Points-Using-Bezier-Curves-in-WPF)

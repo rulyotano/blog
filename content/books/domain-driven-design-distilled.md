@@ -8,7 +8,7 @@ url: /books/domain-driven-design
 cover:
   image: /images/domain-driven-design-distilled/ddd.jpg
   alt: 'Domain-Driven Design Distilled '
-  relative: false
+  relative: true
 ---
 
 Source: [Chat-Gpt](https://chatgpt.com/) ChatGPT

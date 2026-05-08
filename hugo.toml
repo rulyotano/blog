@@ -1,4 +1,4 @@
-baseURL = "https://example.com/"
+baseURL = "http://localhost:1313/"
 languageCode = "en-us"
 title = "Raul's Blog"
 theme = "github.com/adityatelange/hugo-PaperMod"
@@ -30,6 +30,7 @@ title = "Raul's Blog"
 description = "Notes on software engineering."
 keywords = ["blog", "software", "engineering"]
 author = "Raul"
+mainSections = ["posts"]
 defaultTheme = "auto"     # auto | light | dark
 ShowReadingTime = true
 ShowShareButtons = false
@@ -84,18 +85,13 @@ home = ["HTML", "RSS", "JSON"]   # JSON output enables PaperMod's search page
 [menu]
   [[menu.main]]
   identifier = "posts"
-  name = "Posts"
+  name = "Articles"
   url = "/posts/"
   weight = 10
 
   [[menu.main]]
-  identifier = "tags"
-  name = "Tags"
-  url = "/tags/"
+  identifier = "books"
+  name = "Books"
+  url = "/books/"
   weight = 20
 
-  [[menu.main]]
-  identifier = "search"
-  name = "Search"
-  url = "/search/"
-  weight = 30

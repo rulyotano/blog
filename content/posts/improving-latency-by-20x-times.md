@@ -8,7 +8,7 @@ url: /blog/article/improve-service-latency
 cover:
   image: /images/improving-latency-by-20x-times/DALL%C2%B7E%202025-01-26%2022.27.01%20-%20A%20professional%20and%20clean%20infographic-style%20image%20of%20a%20chart%20showing%20latency%20improvement%20over%20time.%20The%20chart%20features%20a%20green%20line%20trending%20downward%20f.webp
   alt: Improving latency by 20x times!
-  relative: false
+  relative: true
 ---
 
 I want to share my experience in improving our service latency and the steps I've taken to get there. As a result, the P75 Latency went down from more than 100 milliseconds to less than 5! By de-normalizing the SQL queries and creating one specific cache to fit our needs.

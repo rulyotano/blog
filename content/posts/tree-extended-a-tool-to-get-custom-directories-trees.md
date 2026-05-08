@@ -10,7 +10,7 @@ url: /blog/article/tree-extended-tool
 cover:
   image: /images/tree-extended-a-tool-to-get-custom-directories-trees/1_JpJDAGpGxP_B_gpkwh4VNA.webp
   alt: Tree-Extended, a tool to get custom directories trees
-  relative: false
+  relative: true
 ---
 
 * [**[Original Article]**](https://medium.com/@rulyotano/tree-extended-a-tool-to-get-custom-directories-trees-3dea42ebf407)

@@ -8,7 +8,7 @@ url: /books/clean-architecture
 cover:
   image: /images/clean-architecture-a-craftsmans-guide-to-software-structure-and-design/clean-architecture.jpg
   alt: 'Clean Architecture: A Craftsman''s Guide to Software Structure and Design'
-  relative: false
+  relative: true
 ---
 
 Source: [Chat-Gpt](https://chatgpt.com/) ChatGPT

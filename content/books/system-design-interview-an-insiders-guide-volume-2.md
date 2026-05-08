@@ -8,7 +8,7 @@ url: /books/system-design-2
 cover:
   image: /images/system-design-interview-an-insiders-guide-volume-2/60631342._SX318_.jpg
   alt: 'System Design Interview - An insider''s guide: Volume 2'
-  relative: false
+  relative: true
 ---
 
 Source: [Chat-Gpt](https://chatgpt.com/) ChatGPT

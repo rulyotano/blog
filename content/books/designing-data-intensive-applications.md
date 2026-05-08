@@ -8,7 +8,7 @@ url: /books/data-intensive-apps
 cover:
   image: /images/designing-data-intensive-applications/Dataintensive-apps.jpg
   alt: Designing Data-Intensive Applications
-  relative: false
+  relative: true
 ---
 
 Source: [Chat-Gpt](https://chatgpt.com/) ChatGPT

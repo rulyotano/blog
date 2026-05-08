@@ -8,7 +8,7 @@ url: /books/clean-code
 cover:
   image: /images/clean-code-a-handbook-of-agile-software-craftsmanship/clean-code.jpg
   alt: 'Clean Code: A Handbook of Agile Software Craftsmanship'
-  relative: false
+  relative: true
 ---
 
 Source: [Chat-Gpt](https://chatgpt.com/) ChatGPT

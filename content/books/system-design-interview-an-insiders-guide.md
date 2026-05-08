@@ -8,7 +8,7 @@ url: /books/system-design-1
 cover:
   image: /images/system-design-interview-an-insiders-guide/54109255._SY475_.jpg
   alt: System Design Interview - An insider's guide
-  relative: false
+  relative: true
 ---
 
 Source: [Chat-Gpt](https://chatgpt.com/) ChatGPT

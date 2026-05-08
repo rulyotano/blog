@@ -8,7 +8,7 @@ url: /books/refactoring-existing-code
 cover:
   image: /images/refactoring-improving-the-design-of-existing-code/TEu7fUodvNkqLJTtvYRGN6LN9mk9aVp4.jpg
   alt: 'Refactoring: Improving the Design of Existing Code'
-  relative: false
+  relative: true
 ---
 
 Source: [Chat-Gpt](https://chatgpt.com/) ChatGPT
