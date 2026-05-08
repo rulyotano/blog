@@ -6,6 +6,7 @@ tags:
 - Blog
 - Coding
 - Javascript
+url: /blog/article/build-your-personal-website-free-reactjs
 cover:
   image: /images/build-your-personal-website-for-free-using-reactjs/article1-main.webp
   alt: Build Your Personal Website for Free Using React.js

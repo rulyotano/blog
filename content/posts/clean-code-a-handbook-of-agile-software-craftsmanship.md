@@ -4,6 +4,7 @@ date: '2024-10-07T14:05:52+00:00'
 draft: false
 tags:
 - Books
+url: /books/clean-code
 cover:
   image: /images/clean-code-a-handbook-of-agile-software-craftsmanship/clean-code.jpg
   alt: 'Clean Code: A Handbook of Agile Software Craftsmanship'

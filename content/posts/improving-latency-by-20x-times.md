@@ -4,6 +4,7 @@ date: '2024-10-09T11:16:55+00:00'
 draft: false
 tags:
 - Blog
+url: /blog/article/improve-service-latency
 cover:
   image: /images/improving-latency-by-20x-times/DALL%C2%B7E%202025-01-26%2022.27.01%20-%20A%20professional%20and%20clean%20infographic-style%20image%20of%20a%20chart%20showing%20latency%20improvement%20over%20time.%20The%20chart%20features%20a%20green%20line%20trending%20downward%20f.webp
   alt: Improving latency by 20x times!

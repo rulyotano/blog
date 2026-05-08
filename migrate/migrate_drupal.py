@@ -217,6 +217,9 @@ def node_to_post(
             except Exception as e:
                 print(f"  ! failed to download cover image {abs_url}: {e}", file=sys.stderr)
 
+    # Original Drupal path alias — becomes the Hugo URL so links stay stable
+    path_alias: str | None = (attrs.get("path") or {}).get("alias")
+
     # Front matter
     front: dict[str, Any] = {
         "title": title,
@@ -224,6 +227,8 @@ def node_to_post(
         "draft": not attrs.get("status", True),
         "tags": tags,
     }
+    if path_alias:
+        front["url"] = path_alias
     summary = attrs.get("field_summary") or attrs.get("field_excerpt")
     if isinstance(summary, dict):
         summary = summary.get("value")

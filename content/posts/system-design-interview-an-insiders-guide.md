@@ -4,6 +4,7 @@ date: '2024-10-11T09:10:01+00:00'
 draft: false
 tags:
 - Books
+url: /books/system-design-1
 cover:
   image: /images/system-design-interview-an-insiders-guide/54109255._SY475_.jpg
   alt: System Design Interview - An insider's guide

@@ -4,6 +4,7 @@ date: '2024-10-07T14:43:16+00:00'
 draft: false
 tags:
 - Books
+url: /books/cracking-coding-interviews
 cover:
   image: /images/cracking-the-coding-interview-189-programming-questions-and-solutions/cracking.jpg
   alt: 'Cracking the Coding Interview: 189 Programming Questions and Solutions'

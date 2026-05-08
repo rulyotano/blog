@@ -4,6 +4,7 @@ date: '2024-10-07T14:51:50+00:00'
 draft: false
 tags:
 - Books
+url: /books/domain-driven-design
 cover:
   image: /images/domain-driven-design-distilled/ddd.jpg
   alt: 'Domain-Driven Design Distilled '

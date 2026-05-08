@@ -4,6 +4,7 @@ date: '2024-10-07T13:43:26+00:00'
 draft: false
 tags:
 - Books
+url: /books/data-intensive-apps
 cover:
   image: /images/designing-data-intensive-applications/Dataintensive-apps.jpg
   alt: Designing Data-Intensive Applications

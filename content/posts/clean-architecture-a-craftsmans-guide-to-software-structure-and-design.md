@@ -4,6 +4,7 @@ date: '2024-10-07T14:19:19+00:00'
 draft: false
 tags:
 - Books
+url: /books/clean-architecture
 cover:
   image: /images/clean-architecture-a-craftsmans-guide-to-software-structure-and-design/clean-architecture.jpg
   alt: 'Clean Architecture: A Craftsman''s Guide to Software Structure and Design'

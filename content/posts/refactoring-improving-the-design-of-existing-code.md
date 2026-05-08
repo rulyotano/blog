@@ -4,6 +4,7 @@ date: '2024-10-11T08:47:25+00:00'
 draft: false
 tags:
 - Books
+url: /books/refactoring-existing-code
 cover:
   image: /images/refactoring-improving-the-design-of-existing-code/TEu7fUodvNkqLJTtvYRGN6LN9mk9aVp4.jpg
   alt: 'Refactoring: Improving the Design of Existing Code'

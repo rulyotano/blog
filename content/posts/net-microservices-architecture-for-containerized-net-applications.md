@@ -4,6 +4,7 @@ date: '2024-10-07T14:30:00+00:00'
 draft: false
 tags:
 - Books
+url: /books/dotnet-microservices
 cover:
   image: /images/net-microservices-architecture-for-containerized-net-applications/dotnet-microservices.png
   alt: '.NET Microservices: Architecture for Containerized .NET Applications'
