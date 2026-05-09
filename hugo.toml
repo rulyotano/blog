@@ -45,16 +45,20 @@ disableScrollToTop = false
 comments = false
 
   [params.homeInfoParams]
-  Title = "Hi 👋"
+  Title = "Hi 👋, I'm Raul"
   Content = "Welcome. I write about software engineering, systems, and whatever else I'm building."
 
   [[params.socialIcons]]
   name = "github"
-  url = "https://github.com/"
+  url = "https://github.com/rulyotano"
 
   [[params.socialIcons]]
-  name = "rss"
-  url = "index.xml"
+  name = "web"
+  url = "https://rulyotano.com"
+
+  [[params.socialIcons]]
+  name = "linkedin"
+  url = "https://www.linkedin.com/in/raulotanohurtado/"
 
   [params.assets]
   disableHLJS = true   # Hugo's built-in Chroma highlighter handles syntax highlighting

@@ -1,7 +1,7 @@
 ---
 title: "Hello, Hugo"
 date: 2026-04-28T09:00:00-05:00
-draft: false
+draft: true
 tags: ["meta"]
 summary: "First post on the new Hugo + PaperMod setup."
 ---
