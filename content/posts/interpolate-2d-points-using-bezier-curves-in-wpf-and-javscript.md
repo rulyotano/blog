@@ -66,6 +66,8 @@ As the above algorithm was originally implemented for closed curves, and it is d
 * If it is a closed curve if x1 is the first point, then x0 is going to be the latest point (in this implementation, it is the latest but one because the latest point is the same as the first one), and if x2 is the latest point, then x3 is going to be the first point (in a similar way, in this implementation, is going to be the second point).
 * If it is an open curve, then x0 = x1 and x3 = x2 for the previous cases.
 
+<script src="https://gist.github.com/rulyotano/399c3716d0afa67bee086803b96c5934.js"></script>
+
 ## The User Control
 
 The user control that we propose is very simple to use, and it works with the MVVM pattern.
@@ -76,7 +78,11 @@ In case the collection of points implements the `INotifyCollectionChanged` inter
 
 This is the complete user control code behind:
 
+<script src="https://gist.github.com/rulyotano/d01bddedebb970a9fcb673cab56c7b61.js"></script>
+
 And this is the XAML code:
+
+<script src="https://gist.github.com/rulyotano/b5094f471971f23e6ebf9d153fb4aee4.js"></script>
 
 ## Examples of Usage
 

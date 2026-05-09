@@ -6,7 +6,7 @@ tags:
 - Blog
 url: /blog/article/improve-service-latency
 cover:
-  image: /images/improving-latency-by-20x-times/DALL%C2%B7E%202025-01-26%2022.27.01%20-%20A%20professional%20and%20clean%20infographic-style%20image%20of%20a%20chart%20showing%20latency%20improvement%20over%20time.%20The%20chart%20features%20a%20green%20line%20trending%20downward%20f.webp
+  image: /images/improving-latency-by-20x-times/dalle-latency-chart.webp
   alt: Improving latency by 20x times!
   relative: true
 ---
@@ -143,4 +143,4 @@ After gathering some useful feedback I created the roadmap and tasks to implemen
 4. Open the door to more teams willing to integrate with our service.
 5. Metrics improved:
 
-![Redis new hit rate](/images/improving-latency-by-20x-times/redis-after-long-ttls.png)![Redis memory change](/images/improving-latency-by-20x-times/redis-memory.png)![DB connections change](/images/improving-latency-by-20x-times/db-connections-change.png)![P99 Latency change](/images/improving-latency-by-20x-times/p99-latency-change-p2.png)![OITs latancy after doing these chan](/images/improving-latency-by-20x-times/Screenshot%202025-02-22%20at%2011.00.05.png)
+![Redis new hit rate](/images/improving-latency-by-20x-times/redis-after-long-ttls.png)![Redis memory change](/images/improving-latency-by-20x-times/redis-memory.png)![DB connections change](/images/improving-latency-by-20x-times/db-connections-change.png)![P99 Latency change](/images/improving-latency-by-20x-times/p99-latency-change-p2.png)![OITs latancy after doing these chan](/images/improving-latency-by-20x-times/screenshot-2025-02-22.png)
