@@ -11,7 +11,6 @@ cover:
   relative: true
 ---
 
-Source: [Chat-Gpt](https://chatgpt.com/) ChatGPT
 
 *Clean Architecture* by Robert C. Martin (Uncle Bob) is a comprehensive guide on building maintainable, scalable, and flexible software systems. The book presents a set of architectural principles and patterns that help software developers design robust systems that are easy to adapt and evolve over time. It focuses on creating a strong separation of concerns and ensuring that core business logic remains independent from external factors like frameworks, databases, or user interfaces.
 

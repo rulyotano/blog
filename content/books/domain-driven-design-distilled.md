@@ -11,7 +11,6 @@ cover:
   relative: true
 ---
 
-Source: [Chat-Gpt](https://chatgpt.com/) ChatGPT
 
 *Cracking the Coding Interview* by Gayle Laakmann McDowell is a popular resource for software engineers preparing for technical interviews. This book provides in-depth explanations, coding problems, and solutions, along with valuable insights into the interview process at major tech companies. It is designed to help candidates understand the technical skills, problem-solving techniques, and strategies necessary to succeed in coding interviews.
 

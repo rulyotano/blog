@@ -11,7 +11,6 @@ cover:
   relative: true
 ---
 
-Source: [Chat-Gpt](https://chatgpt.com/) ChatGPT
 
 **"System Design Interview – An Insider’s Guide"** by Alex Xu is a highly regarded resource for software engineers and architects preparing for technical interviews, particularly those focused on system design. The book provides practical and structured approaches to solving complex system design problems, which are commonly part of interviews at top tech companies.
 

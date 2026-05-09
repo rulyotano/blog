@@ -11,7 +11,6 @@ cover:
   relative: true
 ---
 
-Source: [Chat-Gpt](https://chatgpt.com/) ChatGPT
 
 ## **"System Design Interview - An Insider's Guide: Volume 2"** by Alex Xu and Sahn Lam
 

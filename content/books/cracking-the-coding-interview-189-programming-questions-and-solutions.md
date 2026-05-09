@@ -11,7 +11,6 @@ cover:
   relative: true
 ---
 
-Source: [Chat-Gpt](https://chatgpt.com/) ChatGPT
 
 [Original Book Website](https://www.crackingthecodinginterview.com/)
 

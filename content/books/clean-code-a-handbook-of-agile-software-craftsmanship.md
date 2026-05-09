@@ -11,7 +11,6 @@ cover:
   relative: true
 ---
 
-Source: [Chat-Gpt](https://chatgpt.com/) ChatGPT
 
 *Clean Code* by Robert C. Martin, commonly referred to as "Uncle Bob," is a foundational book in software engineering. It provides principles, best practices, and examples for writing clean, readable, and maintainable code. The book emphasizes the importance of professionalism and craftsmanship in software development and is structured around practical examples, case studies, and advice.
 

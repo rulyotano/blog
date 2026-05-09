@@ -11,7 +11,6 @@ cover:
   relative: true
 ---
 
-Source: [Chat-Gpt](https://chatgpt.com/) ChatGPT
 
 Martin Kleppmann's *Designing Data-Intensive Applications* is an in-depth guide that explores the architecture, design, and scalability of modern data-intensive systems. The book covers the fundamental concepts, trade-offs, and best practices for designing robust, scalable, and maintainable systems that process large amounts of data.
 

@@ -11,7 +11,6 @@ cover:
   relative: true
 ---
 
-Source: [Chat-Gpt](https://chatgpt.com/) ChatGPT
 
 [Online Book](https://learn.microsoft.com/en-us/dotnet/architecture/microservices/)
 
