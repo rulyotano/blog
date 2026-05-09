@@ -100,6 +100,8 @@ From here, I’m only going to give you some tips based on issues that I had whe
 
 The first thing we need to configure is the library that we want to use to be able to work properly when doing server rendering. To that, we can use the [“Custom Document”](https://nextjs.org/docs/advanced-features/custom-document), and set up it there. In the latest version of MUI [here is](https://mui.com/material-ui/guides/server-rendering/) what we need to do in order to configure it. In my case, I used the MUI version 4.x but as frontend libraries go so fast, I see now is version 5.x and it brings some breaking changes. This is how it looks in my case:
 
+<script src="https://gist.github.com/rulyotano/3dfc6cdf7b03490bf5d0f78b89d59793.js"></script>
+
 The key is what we do inside the `.getInitialProps` function. We do whatever we need in order to execute the custom js libraries before generating the HTML, which will depend on the library you want to use and the version.
 
 Another problem I found was that the MUI javascript and ccs were overlapping with already existing ones in the server-side generated HTML. To solve that I just removed those javascript files from the html body. To do that I added the following hook to the `_app.tsx` file:
@@ -153,6 +155,8 @@ Now comes the fun part that Google does for us. You may notice the image URL end
 
 So, what I do is save the image without that part in my static content data. And then I created a js-helper to get the images in the size I want before rendering:
 
+<script data-caption="HTTP://localhost:3000" src="https://gist.github.com/rulyotano/8d90417c98ee90ca65aabf73d02951ac.js"></script>
+
 And then just use it to get the final image url:
 
 ```
@@ -184,6 +188,8 @@ First, we need to create a GitHub token to authorize the external processes to d
 You will add this token to the secrets of your ReactJs website repo. Go to the project’s page and then to `Settings` > `Secrects` > `Actions` and click `New repository secret`. Copy your personal access token and add a name, I used `API_TOKEN_GITHUB` .
 
 The next step is to create the action pipeline. In the same repo, just create a `.yml` file in this location `.github/workflows` . Then you can copy the content from the following file and adapt it to your needs:
+
+<script src="https://gist.github.com/rulyotano/b967ae4ca5209dd8eb3fa3eaa9854ed6.js"></script>
 
 After that, if everything is ok, every time your master branch is updated also you will be updating your `github.io` repo and your website. In this way, you will only need to update one repository and it becomes a lot easier.
 
