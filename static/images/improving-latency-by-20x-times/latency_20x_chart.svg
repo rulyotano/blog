@@ -1,0 +1,133 @@
+<svg viewBox="0 0 1600 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0b1020"/>
+      <stop offset="100%" stop-color="#070a16"/>
+    </linearGradient>
+    <linearGradient id="redLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff6b6b"/>
+      <stop offset="100%" stop-color="#ff3860"/>
+    </linearGradient>
+    <linearGradient id="greenLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff3860" stop-opacity="0.9"/>
+      <stop offset="40%" stop-color="#ffb84d"/>
+      <stop offset="70%" stop-color="#3ddc97"/>
+      <stop offset="100%" stop-color="#00ffae"/>
+    </linearGradient>
+    <linearGradient id="redFill" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ff3860" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#ff3860" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="greenFill" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#00ffae" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#00ffae" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1600" height="600" fill="url(#bg)"/>
+
+  <!-- Subtle grid -->
+  <g stroke="#1a2340" stroke-width="1" opacity="0.5">
+    <line x1="80" y1="120" x2="1520" y2="120"/>
+    <line x1="80" y1="220" x2="1520" y2="220"/>
+    <line x1="80" y1="320" x2="1520" y2="320"/>
+    <line x1="80" y1="420" x2="1520" y2="420"/>
+    <line x1="80" y1="520" x2="1520" y2="520"/>
+  </g>
+  <g stroke="#1a2340" stroke-width="1" opacity="0.3">
+    <line x1="80" y1="80" x2="80" y2="520"/>
+    <line x1="320" y1="80" x2="320" y2="520"/>
+    <line x1="560" y1="80" x2="560" y2="520"/>
+    <line x1="800" y1="80" x2="800" y2="520"/>
+    <line x1="1040" y1="80" x2="1040" y2="520"/>
+    <line x1="1280" y1="80" x2="1280" y2="520"/>
+    <line x1="1520" y1="80" x2="1520" y2="520"/>
+  </g>
+
+  <!-- Y axis labels (latency ms) -->
+  <g font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#5a6c94">
+    <text x="65" y="125" text-anchor="end">2000</text>
+    <text x="65" y="225" text-anchor="end">1500</text>
+    <text x="65" y="325" text-anchor="end">1000</text>
+    <text x="65" y="425" text-anchor="end">500</text>
+    <text x="65" y="525" text-anchor="end">0</text>
+    <text x="40" y="300" text-anchor="middle" transform="rotate(-90, 40, 300)" fill="#7a8db5" font-size="13" letter-spacing="2">LATENCY (ms)</text>
+  </g>
+
+  <!-- Axes -->
+  <line x1="80" y1="520" x2="1520" y2="520" stroke="#3a4870" stroke-width="1.5"/>
+  <line x1="80" y1="80" x2="80" y2="520" stroke="#3a4870" stroke-width="1.5"/>
+
+  <!-- BEFORE area fill - high jittery latency around 1800-1950ms -->
+  <path d="M 80,135 L 160,150 L 240,125 L 320,145 L 400,130 L 480,160 L 560,140 L 640,128 L 720,148 L 800,135
+           L 800,520 L 80,520 Z"
+        fill="url(#redFill)"/>
+
+  <!-- BEFORE line - high jittery latency -->
+  <path d="M 80,135 L 160,150 L 240,125 L 320,145 L 400,130 L 480,160 L 560,140 L 640,128 L 720,148 L 800,135"
+        fill="none" stroke="url(#redLine)" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round" filter="url(#glow)"/>
+
+  <!-- Drop transition - dramatic plunge from 800,135 down to 880,495 -->
+  <path d="M 800,135 C 830,135 850,500 880,495"
+        fill="none" stroke="url(#greenLine)" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round" filter="url(#glow)"/>
+
+  <!-- AFTER area fill - low stable latency around 495-510 -->
+  <path d="M 880,495 L 960,500 L 1040,498 L 1120,503 L 1200,496 L 1280,500 L 1360,499 L 1440,501 L 1520,498
+           L 1520,520 L 880,520 Z"
+        fill="url(#greenFill)"/>
+
+  <!-- AFTER line - low stable latency -->
+  <path d="M 880,495 L 960,500 L 1040,498 L 1120,503 L 1200,496 L 1280,500 L 1360,499 L 1440,501 L 1520,498"
+        fill="none" stroke="#00ffae" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round" filter="url(#glow)"/>
+
+  <!-- Data points on BEFORE line -->
+  <g fill="#ff3860" stroke="#ffffff" stroke-width="1.5">
+    <circle cx="160" cy="150" r="4"/>
+    <circle cx="320" cy="145" r="4"/>
+    <circle cx="480" cy="160" r="4"/>
+    <circle cx="640" cy="128" r="4"/>
+    <circle cx="800" cy="135" r="4"/>
+  </g>
+  <!-- Data points on AFTER line -->
+  <g fill="#00ffae" stroke="#ffffff" stroke-width="1.5">
+    <circle cx="960" cy="500" r="4"/>
+    <circle cx="1120" cy="503" r="4"/>
+    <circle cx="1280" cy="500" r="4"/>
+    <circle cx="1440" cy="501" r="4"/>
+  </g>
+
+  <!-- Vertical dashed marker at the change point -->
+  <line x1="840" y1="80" x2="840" y2="520" stroke="#ffe83d" stroke-width="1.5" stroke-dasharray="6,6" opacity="0.6"/>
+
+  <!-- Drop arrow + label at change point -->
+  <g transform="translate(840, 300)">
+    <circle cx="0" cy="0" r="50" fill="#ffe83d" filter="url(#softGlow)"/>
+    <text x="0" y="10" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="28" font-weight="bold" fill="#0b1020">20×</text>
+  </g>
+
+  <!-- Annotation lines pointing to before/after -->
+  <g stroke="#5a6c94" stroke-width="1" opacity="0.7">
+    <line x1="430" y1="135" x2="430" y2="100"/>
+    <line x1="1200" y1="498" x2="1200" y2="465"/>
+  </g>
+  <text x="430" y="92" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#ff6b6b" letter-spacing="2">~2000 ms</text>
+  <text x="1200" y="455" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#00ffae" letter-spacing="2">~100 ms</text>
+
+  <!-- Time axis label -->
+  <text x="800" y="555" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#7a8db5" letter-spacing="3">TIME →</text>
+</svg>

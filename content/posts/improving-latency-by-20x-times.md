@@ -6,7 +6,7 @@ tags:
 - Blog
 url: /blog/article/improve-service-latency
 cover:
-  image: /images/improving-latency-by-20x-times/dalle-latency-chart.webp
+  image: /images/improving-latency-by-20x-times/latency_20x_chart.svg
   alt: Improving latency by 20x times!
   relative: true
 ---
