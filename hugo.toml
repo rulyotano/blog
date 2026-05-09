@@ -2,6 +2,7 @@ baseURL = "http://localhost:1313/"
 languageCode = "en-us"
 title = "Raul's Blog"
 theme = "github.com/adityatelange/hugo-PaperMod"
+googleAnalytics = "G-TC2TZN3D16"
 
 [module]
 
