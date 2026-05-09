@@ -30,7 +30,7 @@ title = "Raul's Blog"
 description = "Notes on software engineering."
 keywords = ["blog", "software", "engineering"]
 author = "Raul"
-mainSections = ["posts"]
+mainSections = ["blog"]
 defaultTheme = "auto"     # auto | light | dark
 ShowReadingTime = true
 ShowShareButtons = false
@@ -88,9 +88,9 @@ home = ["HTML", "RSS", "JSON"]   # JSON output enables PaperMod's search page
 
 [menu]
   [[menu.main]]
-  identifier = "posts"
-  name = "Articles"
-  url = "/posts/"
+  identifier = "blog"
+  name = "Blog"
+  url = "/blog/"
   weight = 10
 
   [[menu.main]]
