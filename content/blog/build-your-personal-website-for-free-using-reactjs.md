@@ -17,39 +17,41 @@ cover:
 
 In this article, I want to show you how to create your personal website for free!
 
-To get that, we are going to use [GitHub Pages](https://pages.github.com/) which will allow us to host our website and even will give us a secure (HTTPS) URL.
+To get that, we are going to use [GitHub Pages](https://pages.github.com/), which will allow us to host our website and will even give us a secure (HTTPS) URL.
 
-Optionally, we can even use our own domain name, in such case, it is the only thing that you will need to pay for.
+Optionally, we can even use our own domain name; in such a case, it is the only thing that you will need to pay for.
 
-As the title says, we want to create the website using ReactJs.
+As the title says, we want to create the website using ReactJS.
 
 Why?
 
-Well, you can create it more simply, by following the recommendations from GitHub Pages. You can even get a website template with mock data that you can change!
+Well, you can create it more simply by following the recommendations from GitHub Pages. You can even get a website template with mock data that you can change!
 
-But, as a software developer who knows something about ReactJs, I wanted to create a custom personal page, which I can change in the future, use the UI controls and library that I want, or whatever. Maybe doing this is a bit more difficult but I think it is the price to pay to get customization.
+But, as a software developer who knows something about ReactJS, I wanted to create a custom personal page, which I can change in the future, use the UI controls and library that I want, or whatever. Maybe doing this is a bit more difficult, but I think it is the price to pay to get customization.
 
-Finally, I used [MaterialUI](https://mui.com/material-ui/) and [NextJs](https://nextjs.org/) libraries. I will explain why later.
+Finally, I used [MaterialUI](https://mui.com/material-ui/) and [NextJS](https://nextjs.org/) libraries. I will explain why later.
 
 ## **GitHub Pages**
 
 ![](/images/build-your-personal-website-for-free-using-reactjs/1*bju7hnLuJhkUAKfVCsaF_g.gif)
 
-GitHub Pages is a service that GitHub gives developers for free to create personal or company websites. You only need a GitHub user and then create a GitHub repository named `<yourGithubUsername>.github.io` . After that, you commit and push a file `index.html` to your repo, and that is it. You will have your site working (maybe it takes some minutes). You are able to check it at `https://<yourGitHubUsername>.github.io` .
+GitHub Pages is a service that GitHub gives developers for free to create personal or company websites. You only need a GitHub user and then create a GitHub repository named `<yourGithubUsername>.github.io`. After that, you commit and push a file `index.html` to your repo, and that is it. You will have your site working (maybe it takes some minutes). You are able to check it at `https://<yourGitHubUsername>.github.io`.
 
-As we can render static web pages ([GitHub pages suggest](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll) using [Jekyll](https://jekyllrb.com/) to generate your site) I decided to use [NextJs](https://nextjs.org/) in order to create my ReactJs app. Next.js allows ReactJs server-side rendering, but also, it generates a static web app that we can just copy into the github.io repo and push it.
+> GitHub Pages also works for projects. This new version of the blog is hosted like this. By default, it is hosted in `https://<user>.github.io/<repository>/`.
+
+As we can render static web pages ([GitHub pages suggest](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll) using [Jekyll](https://jekyllrb.com/) to generate your site), I decided to use [NextJs](https://nextjs.org/) in order to create my ReactJs app. Next.js allows ReactJs server-side rendering, but also, it generates a static web app that we can just copy into the GitHub.io repo and push it.
 
 ## **Why Next.js?**
 
-We can use ReactJs to create Single Page Applications (SPAs), it has a route library (react-routes) which we can use to create multiple pages and more complex and complete applications in general. The problem is that we will need a Node.js app where to host it. That is why we decided to use NextJs.
+We can use ReactJS to create Single Page Applications (SPAs). It has a route library (react-routes), which we can use to create multiple pages and more complex and complete applications in general. The problem is that we will need a Node.js app to host it. That is why we decided to use NextJS.
 
-Next.js allows us to do server-side rendering, which is just creating the webpage before sending it to the browser and then adding ReactJs and the rest of the javascript code. This is very useful in terms of SEO. But also, NextJs build and export a static website, and we can just copy and paste it into your GitHub Page, which will work.
+Next.js allows us to do server-side rendering, which is just creating the webpage before sending it to the browser and then adding ReactJS and the rest of the JavaScript code. This is very useful in terms of SEO. But also, NextJS builds and exports a static website, and we can just copy and paste it into your GitHub Page, which will work.
 
-My goal in creating my personal web is to create a functional and customizable web in React, but not to use the purest react best practices, like using redux, react-routes, getting the data from APIs endpoints, or using GraphQL… That is why I get the data from static files and I don’t care about unit tests and so on.
+My goal in creating my personal web is to create a functional and customizable web in React, but not to use the purest React best practices, like using Redux, react-routes, getting the data from API endpoints, or using GraphQL… That is why I get the data from static files, and I don’t care about unit tests and so on.
 
 ## **Let’s create our GitHub Pages repository**
 
-As mentioned before, we need to create a new project with this pattern `<yourGitHubUsername>.github.io` , so, in my case, the repo name is `rulyotano.github.io` . After that, you may clone your repo into your local machine and create an `index.html` file with some content. After pushing the changes to GitHub, you should see something in `https://<yourGitHubUsername>.github.io` , it may take some seconds.
+As mentioned before, we need to create a new project with this pattern `<yourGitHubUsername>.github.io`, so, in my case, the repo name is `rulyotano.github.io`. After that, you may clone your repo into your local machine and create an `index.html` file with some content. After pushing the changes to GitHub, you should see something in `https://<yourGitHubUsername>.github.io`, it may take some seconds.
 
 Here on this point, it is good for you to know that you can use [Jekyll](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/about-github-pages-and-jekyll#about-jekyll) to [generate your website](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll). It is the recommended option from GitHub Pages. They describe it like this:
 
