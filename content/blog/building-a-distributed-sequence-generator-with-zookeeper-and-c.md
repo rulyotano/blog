@@ -7,7 +7,7 @@ tags:
 - Coding
 - Distributed Systems
 - Dotnet
-url: /blog/article/articles/zookeeper
+url: /blog/article/zookeeper
 cover:
   image: /images/building-a-distributed-sequence-generator-with-zookeeper-and-c/7054d759-4d7a-47c0-9d98-1cc08c10a9ce.png
   alt: Building a Distributed Sequence Generator with ZooKeeper and C#
