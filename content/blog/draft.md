@@ -98,6 +98,17 @@ draft: true
 - 15. [3Sum](https://leetcode.com/problems/3sum/)
 - 11. [Container With Most Water](https://leetcode.com/problems/container-with-most-water/)
 
+#### 3. [Sliding Windows](https://www.geeksforgeeks.org/dsa/window-sliding-technique/)
+- 643. [Maximum Average Subarray I](https://leetcode.com/problems/maximum-average-subarray-i/)
+- 3. [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
+- 76. [Minimum Windows Substring](https://leetcode.com/problems/minimum-window-substring/)
 
+#### 4. [Fast and Slow Pointers](https://github.com/Chanda-Abdul/Several-Coding-Patterns-for-Solving-Data-Structures-and-Algorithms-Problems-during-Interviews/blob/main/%E2%9C%85%20%20Pattern%2003:%20Fast%20%26%20Slow%20pointers.md)
+- 141. [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/)
+- 202. [Happy Number](https://leetcode.com/problems/happy-number/)
+- 287. [Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/)
 
-
+#### 5. Linked List In-Place Reversal Pattern
+- 206. [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)
+- 92. [Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/)
+- 24. [Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/)
