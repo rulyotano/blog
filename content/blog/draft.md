@@ -1,7 +1,12 @@
+---
+date: '2026-05-14T22:07:11+00:00'
+draft: true
+---
+
 # My Coding Interview Tarining Schema
 
 ## Intro
-- Explain this schema would work for train for most of coding interviews whiteboards hands 1-1 iterviews
+- Explain how this schema would work for train for most of coding interviews whiteboards hands 1-1 iterviews
 - Explain most important is way of communication, thinking process, solving problem skills (from gathering requirements to testing and analysis), over just completing the challenge.
 - Im going to give a short preparation process, to train main things to focus, just a couple of problems
 
@@ -65,3 +70,23 @@
 - Discuss the solution. Are there better solutions, or is it optimal?
 - What's the time complexity?
 - What's the memory complexity?
+
+## Training
+- You cannot solve the thousands of problems from LeetCode or HackerRank.
+- Also, solving random problems also won't work; it is hard to take a representative number of kinds of problems.
+- I think paying is not necessarily needed; the free resources should be enough for most of the interviews.
+- That's why I recommend...
+
+### LeetCode Top Interview Questions
+- I recommend going through all the problems from LeetCode's [Top Interview Questions](https://leetcode.com/explore/featured/card/top-interview-questions-easy/) list.
+- It is under the Explore section
+- It is free
+- Always try to follow the Interview Schema suggested before. If you force yourself to do it in practice, your chances of doing it in the actual interview are going to be higher.
+- If some of the problems are locked, you can always try to find them in other sites, the same with the answers and best solutions.
+
+### Train with these specific kinds of problems
+... in progress... follow this youtube (https://www.youtube.com/watch?v=DjYZk8nrXVY&list=PLCYEYz3DtQjzNG-wmnxoQQJ9W3zUb3Pte&index=2) and add the reference...
+
+
+
+
