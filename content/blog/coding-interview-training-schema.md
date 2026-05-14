@@ -111,121 +111,121 @@ Inspired by this [YouTube video](https://www.youtube.com/watch?v=DjYZk8nrXVY&lis
 
 Precompute cumulative sums for O(1) range queries.
 
-- 303. [Range Sum Query - Immutable](https://leetcode.com/problems/range-sum-query-immutable/)
-- 525. [Contiguous Array](https://leetcode.com/problems/contiguous-array/)
-- 560. [Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/)
+- 303 [Range Sum Query - Immutable](https://leetcode.com/problems/range-sum-query-immutable/)
+- 525 [Contiguous Array](https://leetcode.com/problems/contiguous-array/)
+- 560 [Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/)
 
 #### 2. [Two Pointers](https://www.geeksforgeeks.org/dsa/two-pointers-technique/)
 
 Use two indices moving toward or away from each other to avoid nested loops.
 
-- 167. [Two Sum II - Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/)
-- 15. [3Sum](https://leetcode.com/problems/3sum/)
-- 11. [Container With Most Water](https://leetcode.com/problems/container-with-most-water/)
+- 167 [Two Sum II - Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/)
+- 15 [3Sum](https://leetcode.com/problems/3sum/)
+- 11 [Container With Most Water](https://leetcode.com/problems/container-with-most-water/)
 
 #### 3. [Sliding Window](https://www.geeksforgeeks.org/dsa/window-sliding-technique/)
 
 Maintain a dynamic window over an array or string to find subarrays/substrings that meet a condition.
 
-- 643. [Maximum Average Subarray I](https://leetcode.com/problems/maximum-average-subarray-i/)
-- 3. [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
-- 76. [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/)
+- 643 [Maximum Average Subarray I](https://leetcode.com/problems/maximum-average-subarray-i/)
+- 3 [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
+- 76 [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/)
 
 #### 4. [Fast & Slow Pointers](https://github.com/Chanda-Abdul/Several-Coding-Patterns-for-Solving-Data-Structures-and-Algorithms-Problems-during-Interviews/blob/main/%E2%9C%85%20%20Pattern%2003:%20Fast%20%26%20Slow%20pointers.md)
 
 Two pointers moving at different speeds — useful for cycle detection and finding midpoints in linked lists.
 
-- 141. [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/)
-- 202. [Happy Number](https://leetcode.com/problems/happy-number/)
-- 287. [Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/)
+- 141 [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/)
+- 202 [Happy Number](https://leetcode.com/problems/happy-number/)
+- 287 [Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/)
 
 #### 5. Linked List In-Place Reversal
 
 Reverse a linked list or a portion of it without extra space.
 
-- 206. [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)
-- 92. [Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/)
-- 24. [Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/)
+- 206 [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)
+- 92 [Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/)
+- 24 [Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/)
 
 #### 6. Monotonic Stack
 
 Use a stack that maintains elements in monotone order to find next greater/smaller elements efficiently.
 
-- 739. [Daily Temperatures](https://leetcode.com/problems/daily-temperatures/)
-- 496. [Next Greater Element I](https://leetcode.com/problems/next-greater-element-i/)
-- 84. [Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/)
+- 739 [Daily Temperatures](https://leetcode.com/problems/daily-temperatures/)
+- 496 [Next Greater Element I](https://leetcode.com/problems/next-greater-element-i/)
+- 84 [Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/)
 
 #### 7. Top K Elements
 
 Use a heap to efficiently track the K largest or smallest elements without full sorting.
 
-- 215. [Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/)
-- 347. [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/)
-- 373. [Find K Pairs with Smallest Sums](https://leetcode.com/problems/find-k-pairs-with-smallest-sums/)
+- 215 [Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/)
+- 347 [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/)
+- 373 [Find K Pairs with Smallest Sums](https://leetcode.com/problems/find-k-pairs-with-smallest-sums/)
 
 #### 8. Overlapping Intervals
 
 Sort intervals and merge or insert by comparing start/end boundaries.
 
-- 56. [Merge Intervals](https://leetcode.com/problems/merge-intervals/)
-- 57. [Insert Interval](https://leetcode.com/problems/insert-interval/)
-- 253. [Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii/)
+- 56 [Merge Intervals](https://leetcode.com/problems/merge-intervals/)
+- 57 [Insert Interval](https://leetcode.com/problems/insert-interval/)
+- 253 [Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii/)
 
 #### 9. Modified Binary Search
 
 Apply binary search beyond sorted arrays — on rotated arrays, answer spaces, or monotone functions.
 
-- 704. [Binary Search](https://leetcode.com/problems/binary-search/)
-- 33. [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)
-- 162. [Find Peak Element](https://leetcode.com/problems/find-peak-element/)
+- 704 [Binary Search](https://leetcode.com/problems/binary-search/)
+- 33 [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)
+- 162 [Find Peak Element](https://leetcode.com/problems/find-peak-element/)
 
 #### 10. Binary Tree Traversal
 
 Master all traversal orders: inorder, preorder, postorder, and level-order (BFS).
 
-- 94. [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/)
-- 104. [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/)
-- 102. [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/)
+- 94 [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/)
+- 104 [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/)
+- 102 [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/)
 
 #### 11. Depth-First Search (DFS)
 
 Explore as deep as possible before backtracking — applies to trees and graphs.
 
-- 112. [Path Sum](https://leetcode.com/problems/path-sum/)
-- 200. [Number of Islands](https://leetcode.com/problems/number-of-islands/)
-- 695. [Max Area of Island](https://leetcode.com/problems/max-area-of-island/)
+- 112 [Path Sum](https://leetcode.com/problems/path-sum/)
+- 200 [Number of Islands](https://leetcode.com/problems/number-of-islands/)
+- 695 [Max Area of Island](https://leetcode.com/problems/max-area-of-island/)
 
 #### 12. Breadth-First Search (BFS)
 
 Explore level by level — ideal for shortest path and layer-by-layer problems.
 
-- 102. [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/)
-- 994. [Rotting Oranges](https://leetcode.com/problems/rotting-oranges/)
-- 127. [Word Ladder](https://leetcode.com/problems/word-ladder/)
+- 102 [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/)
+- 994 [Rotting Oranges](https://leetcode.com/problems/rotting-oranges/)
+- 127 [Word Ladder](https://leetcode.com/problems/word-ladder/)
 
 #### 13. Matrix Traversal
 
 Apply DFS or BFS on a 2D grid, treating each cell as a node.
 
-- 733. [Flood Fill](https://leetcode.com/problems/flood-fill/)
-- 130. [Surrounded Regions](https://leetcode.com/problems/surrounded-regions/)
-- 79. [Word Search](https://leetcode.com/problems/word-search/)
+- 733 [Flood Fill](https://leetcode.com/problems/flood-fill/)
+- 130 [Surrounded Regions](https://leetcode.com/problems/surrounded-regions/)
+- 79 [Word Search](https://leetcode.com/problems/word-search/)
 
 #### 14. Backtracking
 
 Explore all possible paths by building candidates incrementally and pruning invalid ones.
 
-- 78. [Subsets](https://leetcode.com/problems/subsets/)
-- 46. [Permutations](https://leetcode.com/problems/permutations/)
-- 39. [Combination Sum](https://leetcode.com/problems/combination-sum/)
+- 78 [Subsets](https://leetcode.com/problems/subsets/)
+- 46 [Permutations](https://leetcode.com/problems/permutations/)
+- 39 [Combination Sum](https://leetcode.com/problems/combination-sum/)
 
 #### 15. Dynamic Programming
 
 Break problems into overlapping subproblems, store results to avoid recomputation.
 
-- 70. [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)
-- 322. [Coin Change](https://leetcode.com/problems/coin-change/)
-- 300. [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/)
+- 70 [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)
+- 322 [Coin Change](https://leetcode.com/problems/coin-change/)
+- 300 [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/)
 
 ---
 
