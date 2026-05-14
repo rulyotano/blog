@@ -84,8 +84,19 @@ draft: true
 - Always try to follow the Interview Schema suggested before. If you force yourself to do it in practice, your chances of doing it in the actual interview are going to be higher.
 - If some of the problems are locked, you can always try to find them in other sites, the same with the answers and best solutions.
 
-### Train with these specific kinds of problems
-... in progress... follow this youtube (https://www.youtube.com/watch?v=DjYZk8nrXVY&list=PLCYEYz3DtQjzNG-wmnxoQQJ9W3zUb3Pte&index=2) and add the reference...
+### Train Kinds based on kind of problems
+- Found this idea in this [Youtube Video](https://www.youtube.com/watch?v=DjYZk8nrXVY&list=PLCYEYz3DtQjzNG-wmnxoQQJ9W3zUb3Pte&index=2)
+- Train for specific kind or pattern of problems
+
+#### 1. [Prefix Sum](https://en.wikipedia.org/wiki/Prefix_sum)
+- 303. [Range Sum Query - Immutable](https://leetcode.com/problems/range-sum-query-immutable/)
+- 525. [Contiguous Array](https://leetcode.com/problems/contiguous-array/)
+- 560. [Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/description/)
+
+#### 2. [Two Pointers](https://www.geeksforgeeks.org/dsa/two-pointers-technique/)
+- 167. [Two Sum II - Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/)
+- 15. [3Sum](https://leetcode.com/problems/3sum/)
+- 11. [Container With Most Water](https://leetcode.com/problems/container-with-most-water/)
 
 
 
