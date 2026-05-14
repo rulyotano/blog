@@ -169,19 +169,32 @@ Sort intervals and merge or insert by comparing start/end boundaries.
 
 - 56 [Merge Intervals](https://leetcode.com/problems/merge-intervals/)
 - 57 [Insert Interval](https://leetcode.com/problems/insert-interval/)
+- 435 [Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/)
 - 253 [Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii/)
 
 #### 9. Modified Binary Search
 
 Apply binary search beyond sorted arrays — on rotated arrays, answer spaces, or monotone functions.
 
-- 704 [Binary Search](https://leetcode.com/problems/binary-search/)
 - 33 [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)
+- 153 [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/)
+- 240 [Search a 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii/)
+
+> others
+
+- 704 [Binary Search](https://leetcode.com/problems/binary-search/)
 - 162 [Find Peak Element](https://leetcode.com/problems/find-peak-element/)
 
 #### 10. Binary Tree Traversal
 
 Master all traversal orders: inorder, preorder, postorder, and level-order (BFS).
+
+- 257 [Binary Tree Paths](https://leetcode.com/problems/binary-tree-paths/)
+- 230 [Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/)
+- 124 [Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/)
+- 107 [Binary Tree Level Order Traversal II](https://leetcode.com/problems/binary-tree-level-order-traversal-ii/)
+  
+> others
 
 - 94 [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/)
 - 104 [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/)
@@ -190,6 +203,12 @@ Master all traversal orders: inorder, preorder, postorder, and level-order (BFS)
 #### 11. Depth-First Search (DFS)
 
 Explore as deep as possible before backtracking — applies to trees and graphs.
+
+- 133 [Clone Graph](https://leetcode.com/problems/clone-graph/)
+- 113 [Path Sum II](https://leetcode.com/problems/path-sum-ii/)
+- 210 [Course Schedule II](https://leetcode.com/problems/course-schedule-ii/)
+
+> others
 
 - 112 [Path Sum](https://leetcode.com/problems/path-sum/)
 - 200 [Number of Islands](https://leetcode.com/problems/number-of-islands/)
@@ -209,6 +228,10 @@ Apply DFS or BFS on a 2D grid, treating each cell as a node.
 
 - 733 [Flood Fill](https://leetcode.com/problems/flood-fill/)
 - 130 [Surrounded Regions](https://leetcode.com/problems/surrounded-regions/)
+- 200 [Number of Islands](https://leetcode.com/problems/number-of-islands/)
+
+> others
+
 - 79 [Word Search](https://leetcode.com/problems/word-search/)
 
 #### 14. Backtracking
@@ -217,6 +240,10 @@ Explore all possible paths by building candidates incrementally and pruning inva
 
 - 78 [Subsets](https://leetcode.com/problems/subsets/)
 - 46 [Permutations](https://leetcode.com/problems/permutations/)
+- 51 [N-Queens](https://leetcode.com/problems/n-queens/)
+
+> others
+
 - 39 [Combination Sum](https://leetcode.com/problems/combination-sum/)
 
 #### 15. Dynamic Programming
@@ -226,6 +253,9 @@ Break problems into overlapping subproblems, store results to avoid recomputatio
 - 70 [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)
 - 322 [Coin Change](https://leetcode.com/problems/coin-change/)
 - 300 [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/)
+- 416 [Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum/)
+- 1143 [Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence/)
+- 312 [Burst Balloons](https://leetcode.com/problems/burst-balloons/)
 
 ---
 
@@ -236,5 +266,4 @@ Following this schema consistently during practice is what builds the muscle mem
 If you want to go further, these books are highly recommended:
 
 - [Cracking the Coding Interview](https://www.crackingthecodinginterview.com/) by Gayle Laakmann McDowell — the classic reference for interview preparation
-- [Designing Data-Intensive Applications](https://dataintensive.net/) by Martin Kleppmann — essential for system design rounds
 - [Introduction to Algorithms (CLRS)](https://mitpress.mit.edu/9780262046305/introduction-to-algorithms/) — rigorous algorithms and data structures reference
