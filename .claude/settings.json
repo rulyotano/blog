@@ -3,7 +3,12 @@
     "allow": [
       "Bash(hugo --minify)",
       "WebFetch(domain:rulyotano.com)",
-      "WebFetch(domain:rulyotano.github.io)"
+      "WebFetch(domain:rulyotano.github.io)",
+      "WebFetch(domain:www.youtube.com)",
+      "WebSearch",
+      "WebFetch(domain:galaxy.ai)",
+      "WebFetch(domain:ytscribe.com)",
+      "WebFetch(domain:medium.com)"
     ]
   }
 }

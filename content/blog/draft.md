@@ -3,7 +3,7 @@ date: '2026-05-14T22:07:11+00:00'
 draft: true
 ---
 
-# My Coding Interview Tarining Schema
+# My Coding Interview Training Schema
 
 ## Intro
 - Explain how this schema would work for train for most of coding interviews whiteboards hands 1-1 iterviews
@@ -112,3 +112,11 @@ draft: true
 - 206. [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)
 - 92. [Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/)
 - 24. [Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/)
+
+(Gather all other data from the youtube video)
+
+
+## Summary
+- This training should help in most interviews.
+- Harder interviews (More senior or skilled profiles in top companies) could require train harder.
+- Complement reading material as Cracking the Coding Interviews (add reference) or learning about Algorithm and Data Structures
