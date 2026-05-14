@@ -14,7 +14,7 @@ cover:
   relative: true
 ---
 
-Coding interviews are not just about solving problems — they measure your communication, thinking process, and problem-solving skills, from gathering requirements all the way to testing and complexity analysis. This is a short but effective preparation schema focused on training those skills, not memorizing thousands of problems.
+Coding interviews are not just about solving problems — they measure your communication, thinking process, and problem-solving skills, from gathering requirements all the way to testing and complexity analysis. If you only have one or two weeks to prepare, this is a short but effective preparation schema focused on training those skills, not memorizing thousands of problems.
 
 ## Interview Schema
 
