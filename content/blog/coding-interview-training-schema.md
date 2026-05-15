@@ -9,7 +9,7 @@ tags:
 - Interview
 url: /blog/article/coding-interview-training-schema
 cover:
-  image: /images/coding-interview-training-schema/cover.svg
+  image: /images/coding-interview-training-schema/cover.png
   alt: Coding Interview Training Schema — 6 steps and 15 patterns
   relative: true
 ---
