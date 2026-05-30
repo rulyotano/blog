@@ -27,7 +27,7 @@ draft: true
 - For example, the action x+=1 is not idempotent. The output depends on the value of x at the moment of triggering the action.
 - For example, we could send the message with a unique idempotency-id Action(510412323, x+=1) and the receiver need to save the id in a persistent storage and check if it was already inserted (for example unique constraint in database). Other option is to use a timestamp, and always check the previous latest update is older than the new action timestamp.
 
-## Queues
+## Async (Queues)
 - Sender -> Message Broker -> Listener
 - What happen when error occurs in the Listener
   - There is a critical error and the service shutdown unexpectedly:
@@ -41,7 +41,7 @@ draft: true
     - After the situation is fixed, the message is sent back to the queue, notice idempotency importance.
 - No errors. All good, the message is ACKed.
 
-## Http
+## Sync (Http)
 - Service A -> HTTP Message -> Service B
 - What happens when an error occurs in Service B (It is down, error in dependant services, application error)
   - The Service A will get a HTTP error (not success response). It is the only option. Interesting here is what we can do with this error.
@@ -60,5 +60,12 @@ draft: true
           - Let the record in a non-processed state
           - Or move the error to failed to process state.
 
-
+## Outbox (All or nothing)
+- What happens when we have execute several actions, or update several services, and we want to be sure eventually all are executed?
+- Here is when comes the Outbox pattern.
+- Imaging in Service A, we update the DB, and then we need to send a message to Service B, or make a http call, or update also a MongoDb. And we want to be sure eventually both things happen.
+- The magic is, in the same DB transaction insert also a record in the Outbox table. (note: transaction is not only for SQL database, also Non-SQL DBs may support transactions, for example MongoDb support multi-document transactions)
+- These Outbox records are processed later by a Background process or recurring job.
+- If some error occurs, the records are not marked as done.
+- It is important the handler of the action to be idempotent, since the Outbox can be retried, and can be executed even if before was successfully processed.
 
