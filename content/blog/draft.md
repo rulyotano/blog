@@ -3,9 +3,9 @@ date: '2026-05-18T09:07:11+00:00'
 draft: true
 ---
 
-# Reliable Micro-Services (and not micro) Communication
+# Implement Reliable Micro-Services (and not micro-service) Communications
 
-- How I'm sure inter-services communications always are properly handled (or at least, the error is escalated)?
+- How am I sure inter-services communications always are properly handled (or at least, the error is escalated)?
 - Happy path is Client -> Service A -> Service B. Done! Both services updated their DBs and are in sync.
 - But what happens when there is an error in the middle?
 - Let's talk about it!
@@ -69,3 +69,25 @@ draft: true
 - If some error occurs, the records are not marked as done.
 - It is important the handler of the action to be idempotent, since the Outbox can be retried, and can be executed even if before was successfully processed.
 
+## Example: Process Payment Received
+- Problem: We need to process a payment. We have a webhook service (sync http request) that receive the bank request and publish an async message into the queue which will be handled by the balance service:
+  - In the balance service update the customer balance (DB-update)
+  - Notify compliance service to check if the payment is valid (publish RabbitMq message)
+  - Notify the user (Http request to the notification service)
+- In the balance service we implement the outbox pattern and in the same transaction we save:
+  - Balance update
+  - Insert outbox record to notify compliance service
+  - Insert outbox record to notify the user
+  - Commit transaction
+- If the balance is updated we are sure we have also inserted outbox records to notify compliance and the user.
+- If one of these 3 actions fails, the whole transaction is rollback-ed, and the message will be sent to the dead-letter queue. (we could also implement some retry mechanism to avoid transient issues). We will get notified by alerts and we will see this in dashboard and logs while monitoring.
+- A background process will pick-up the outbox record to notify compliance:
+  - will publish the message into the RabbitMq queue and
+  - will mark the outbox record and processed
+  - if any error happens, the message will remain not processed, and will be retried later by another worker.
+    - we will need alerts on these pending outbox records
+- Another background process will pick-up the outbox record to notify the user:
+  - will send the http request to the notification service
+  - will mark the outbox record and processed
+  - if any error happens, the message will remain not processed, and will be retried later by another worker.
+    - we will need alerts on these pending outbox records
