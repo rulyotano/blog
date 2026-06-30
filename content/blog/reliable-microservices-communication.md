@@ -10,7 +10,7 @@ tags:
 - Backend
 url: /articles/reliable-microservices-communication
 cover:
-  image: /images/reliable-microservices-communication/cover.svg
+  image: /images/reliable-microservices-communication/cover.png
   alt: "Reliable Microservice Communication: Patterns That Keep Distributed Systems Sane"
   relative: true
 ---
