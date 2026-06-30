@@ -12,7 +12,7 @@ url: /articles/reliable-microservices-communication
 cover:
   image: /images/reliable-microservices-communication/cover.png
   alt: "Reliable Microservice Communication: Patterns That Keep Distributed Systems Sane"
-  relative: true
+  relative: false
 ---
 
 Distributed systems fail in ways that monoliths never do. In a single process, if a function call fails you get an exception — simple, local, easy to reason about. Spread that same call across a network boundary and suddenly you're dealing with partial failures, redelivered messages, timeouts that may or may not mean the operation succeeded, and cascading outages that start from something as mundane as a slow database query.
