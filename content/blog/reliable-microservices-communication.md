@@ -2,6 +2,7 @@
 title: "Reliable Microservice Communication: Patterns That Keep Distributed Systems Sane"
 date: '2026-06-30T09:00:00+00:00'
 draft: false
+author: Raul
 tags:
 - Blog
 - Distributed Systems

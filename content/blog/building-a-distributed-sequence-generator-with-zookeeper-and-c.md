@@ -2,6 +2,7 @@
 title: Building a Distributed Sequence Generator with ZooKeeper and C#
 date: '2025-03-17T22:07:11+00:00'
 draft: false
+author: Raul
 tags:
 - Blog
 - Coding
@@ -11,7 +12,7 @@ url: /articles/zookeeper
 cover:
   image: /images/building-a-distributed-sequence-generator-with-zookeeper-and-c/7054d759-4d7a-47c0-9d98-1cc08c10a9ce.png
   alt: Building a Distributed Sequence Generator with ZooKeeper and C#
-  relative: true
+  relative: false
 ---
 
 ## 1. Goal and Motivation

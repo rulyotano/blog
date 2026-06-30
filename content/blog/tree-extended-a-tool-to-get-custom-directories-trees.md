@@ -2,6 +2,7 @@
 title: Tree-Extended, a tool to get custom directories trees
 date: '2024-10-02T18:33:17+00:00'
 draft: false
+author: Raul
 tags:
 - Blog
 - VsCode
@@ -10,7 +11,7 @@ url: /blog/article/tree-extended-tool
 cover:
   image: /images/tree-extended-a-tool-to-get-custom-directories-trees/1_JpJDAGpGxP_B_gpkwh4VNA.webp
   alt: Tree-Extended, a tool to get custom directories trees
-  relative: true
+  relative: false
 ---
 
 * [**[Original Article]**](https://medium.com/@rulyotano/tree-extended-a-tool-to-get-custom-directories-trees-3dea42ebf407)

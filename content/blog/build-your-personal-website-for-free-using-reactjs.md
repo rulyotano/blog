@@ -2,6 +2,7 @@
 title: Build Your Personal Website for Free Using React.js
 date: '2024-10-01T14:59:32+00:00'
 draft: false
+author: Raul
 tags:
 - Blog
 - Coding
@@ -10,7 +11,7 @@ url: /blog/article/build-your-personal-website-free-reactjs
 cover:
   image: /images/build-your-personal-website-for-free-using-reactjs/article1-main.webp
   alt: Build Your Personal Website for Free Using React.js
-  relative: true
+  relative: false
 ---
 
 * [**[Original Article]**](https://medium.com/better-programming/get-your-personal-website-for-free-create-it-with-reactjs-b7e3c3c874b4)
