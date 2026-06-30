@@ -1,0 +1,201 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 520" width="1100" height="520">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f1923"/>
+      <stop offset="100%" style="stop-color:#1a2d3d"/>
+    </linearGradient>
+    <linearGradient id="awsOrange" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF9900"/>
+      <stop offset="100%" style="stop-color:#D97400"/>
+    </linearGradient>
+    <linearGradient id="awsPink" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF4F8B"/>
+      <stop offset="100%" style="stop-color:#CC3369"/>
+    </linearGradient>
+    <linearGradient id="awsPurple" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#8C4FFF"/>
+      <stop offset="100%" style="stop-color:#6B2FCC"/>
+    </linearGradient>
+    <linearGradient id="awsRed" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#DD344C"/>
+      <stop offset="100%" style="stop-color:#AA1A2E"/>
+    </linearGradient>
+    <linearGradient id="awsGreen" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#3F8624"/>
+      <stop offset="100%" style="stop-color:#2A5C18"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+    <marker id="arrOrange" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#FF9900"/>
+    </marker>
+    <marker id="arrRed" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#DD344C"/>
+    </marker>
+    <marker id="arrGray" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#8ab4d4"/>
+    </marker>
+    <marker id="arrGreen" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#3F8624"/>
+    </marker>
+  </defs>
+
+  <rect width="1100" height="520" fill="url(#bg)"/>
+  <pattern id="grid" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+    <circle cx="20" cy="20" r="1" fill="#ffffff" opacity="0.05"/>
+  </pattern>
+  <rect width="1100" height="520" fill="url(#grid)"/>
+
+  <!-- Title -->
+  <text x="550" y="42" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#ffffff">Async Queue Flow — Error Handling</text>
+  <line x1="200" y1="52" x2="900" y2="52" stroke="#FF9900" stroke-width="1" opacity="0.4"/>
+
+  <!-- ===== HAPPY PATH SECTION ===== -->
+  <text x="550" y="82" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" fill="#8ab4d4">Happy Path</text>
+
+  <!-- AWS Box helper: x, y, w, h, color, label, sublabel -->
+
+  <!-- Producer (ECS Service) -->
+  <g filter="url(#shadow)">
+    <rect x="60" y="100" width="130" height="110" rx="8" fill="#1e2f3d" stroke="#FF9900" stroke-width="2"/>
+    <rect x="60" y="100" width="130" height="30" rx="8" fill="url(#awsOrange)"/>
+    <rect x="60" y="120" width="130" height="10" fill="url(#awsOrange)"/>
+    <!-- ECS icon: container squares -->
+    <rect x="108" y="108" width="10" height="10" rx="1" fill="#ffffff" opacity="0.9"/>
+    <rect x="122" y="108" width="10" height="10" rx="1" fill="#ffffff" opacity="0.6"/>
+    <rect x="108" y="112" width="10" height="10" rx="1" fill="#ffffff" opacity="0.3"/>
+    <text x="125" y="162" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" font-weight="700" fill="#ffffff">Producer</text>
+    <text x="125" y="180" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#8ab4d4">ECS Service</text>
+  </g>
+
+  <!-- Arrow Producer → SQS -->
+  <line x1="192" y1="155" x2="278" y2="155" stroke="#FF9900" stroke-width="2.5" marker-end="url(#arrOrange)"/>
+  <text x="235" y="147" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#FF9900">publish</text>
+
+  <!-- SQS Queue -->
+  <g filter="url(#shadow)">
+    <rect x="280" y="100" width="130" height="110" rx="8" fill="#1e2f3d" stroke="#FF4F8B" stroke-width="2"/>
+    <rect x="280" y="100" width="130" height="30" rx="8" fill="url(#awsPink)"/>
+    <rect x="280" y="120" width="130" height="10" fill="url(#awsPink)"/>
+    <!-- SQS icon: stacked lines -->
+    <rect x="316" y="105" width="28" height="5" rx="1" fill="#ffffff" opacity="0.9"/>
+    <rect x="316" y="113" width="28" height="5" rx="1" fill="#ffffff" opacity="0.7"/>
+    <rect x="316" y="121" width="28" height="5" rx="1" fill="#ffffff" opacity="0.5"/>
+    <text x="345" y="160" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" font-weight="700" fill="#ffffff">SQS Queue</text>
+    <text x="345" y="178" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#8ab4d4">AWS SQS</text>
+  </g>
+
+  <!-- Arrow SQS → Lambda -->
+  <line x1="412" y1="155" x2="498" y2="155" stroke="#FF9900" stroke-width="2.5" marker-end="url(#arrOrange)"/>
+  <text x="455" y="147" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#FF9900">trigger</text>
+
+  <!-- Lambda Consumer -->
+  <g filter="url(#shadow)">
+    <rect x="500" y="100" width="130" height="110" rx="8" fill="#1e2f3d" stroke="#FF9900" stroke-width="2"/>
+    <rect x="500" y="100" width="130" height="30" rx="8" fill="url(#awsOrange)"/>
+    <rect x="500" y="120" width="130" height="10" fill="url(#awsOrange)"/>
+    <!-- Lambda icon: λ -->
+    <text x="545" y="120" font-family="Arial,sans-serif" font-size="16" font-weight="900" fill="#ffffff">λ</text>
+    <text x="565" y="160" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" font-weight="700" fill="#ffffff">Consumer</text>
+    <text x="565" y="178" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#8ab4d4">AWS Lambda</text>
+  </g>
+
+  <!-- Arrow Lambda → RDS (success) -->
+  <line x1="632" y1="155" x2="718" y2="155" stroke="#3F8624" stroke-width="2.5" marker-end="url(#arrGreen)"/>
+  <text x="675" y="147" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#3F8624">✓ ACK + save</text>
+
+  <!-- RDS -->
+  <g filter="url(#shadow)">
+    <rect x="720" y="100" width="130" height="110" rx="8" fill="#1e2f3d" stroke="#527FFF" stroke-width="2"/>
+    <rect x="720" y="100" width="130" height="30" rx="8" fill="#527FFF"/>
+    <rect x="720" y="120" width="130" height="10" fill="#527FFF"/>
+    <!-- DB cylinder icon -->
+    <ellipse cx="762" cy="113" rx="12" ry="5" fill="#ffffff" opacity="0.8"/>
+    <line x1="750" y1="113" x2="750" y2="123" stroke="#ffffff" stroke-width="1.5" opacity="0.8"/>
+    <line x1="774" y1="113" x2="774" y2="123" stroke="#ffffff" stroke-width="1.5" opacity="0.8"/>
+    <ellipse cx="762" cy="123" rx="12" ry="5" fill="#3a5fcc" stroke="#ffffff" stroke-width="1" opacity="0.9"/>
+    <text x="785" y="160" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" font-weight="700" fill="#ffffff">Database</text>
+    <text x="785" y="178" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#8ab4d4">Amazon RDS</text>
+  </g>
+
+  <!-- ===== ERROR PATH SECTION ===== -->
+  <line x1="60" y1="250" x2="1040" y2="250" stroke="#ffffff" stroke-width="0.5" stroke-dasharray="4,4" opacity="0.2"/>
+  <text x="550" y="278" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" fill="#DD344C">Error Path</text>
+
+  <!-- SQS (second row, same queue) -->
+  <g filter="url(#shadow)">
+    <rect x="280" y="295" width="130" height="110" rx="8" fill="#1e2f3d" stroke="#FF4F8B" stroke-width="2"/>
+    <rect x="280" y="295" width="130" height="30" rx="8" fill="url(#awsPink)"/>
+    <rect x="280" y="315" width="130" height="10" fill="url(#awsPink)"/>
+    <rect x="316" y="300" width="28" height="5" rx="1" fill="#ffffff" opacity="0.9"/>
+    <rect x="316" y="308" width="28" height="5" rx="1" fill="#ffffff" opacity="0.7"/>
+    <rect x="316" y="316" width="28" height="5" rx="1" fill="#ffffff" opacity="0.5"/>
+    <text x="345" y="355" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" font-weight="700" fill="#ffffff">SQS Queue</text>
+    <text x="345" y="373" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#8ab4d4">(message visible again)</text>
+  </g>
+
+  <!-- Lambda crashes → no ACK -->
+  <g filter="url(#shadow)">
+    <rect x="500" y="295" width="130" height="110" rx="8" fill="#1e2f3d" stroke="#DD344C" stroke-width="2"/>
+    <rect x="500" y="295" width="130" height="30" rx="8" fill="url(#awsRed)"/>
+    <rect x="500" y="315" width="130" height="10" fill="url(#awsRed)"/>
+    <text x="545" y="315" font-family="Arial,sans-serif" font-size="16" font-weight="900" fill="#ffffff">λ</text>
+    <text x="565" y="355" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" font-weight="700" fill="#ffffff">Consumer</text>
+    <text x="565" y="373" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#DD344C">× crash / error</text>
+  </g>
+
+  <!-- Arrow SQS → Lambda (error) -->
+  <line x1="412" y1="350" x2="498" y2="350" stroke="#DD344C" stroke-width="2.5" marker-end="url(#arrRed)"/>
+
+  <!-- Arrow Lambda crashed → no ACK → SQS timeout requeue -->
+  <path d="M 565 405 L 565 430 L 345 430 L 345 407" stroke="#DD344C" stroke-width="2" fill="none" stroke-dasharray="5,3" marker-end="url(#arrRed)"/>
+  <text x="455" y="448" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#DD344C">no ACK → visibility timeout → requeue</text>
+
+  <!-- Dead Letter Queue (after max retries) -->
+  <g filter="url(#shadow)">
+    <rect x="720" y="295" width="140" height="110" rx="8" fill="#2c1520" stroke="#DD344C" stroke-width="2"/>
+    <rect x="720" y="295" width="140" height="30" rx="8" fill="url(#awsRed)"/>
+    <rect x="720" y="315" width="140" height="10" fill="url(#awsRed)"/>
+    <!-- DLQ icon -->
+    <rect x="755" y="300" width="28" height="5" rx="1" fill="#ffffff" opacity="0.9"/>
+    <rect x="755" y="308" width="28" height="5" rx="1" fill="#ffffff" opacity="0.7"/>
+    <rect x="755" y="316" width="28" height="5" rx="1" fill="#ffffff" opacity="0.5"/>
+    <line x1="741" y1="302" x2="793" y2="322" stroke="#ffffff" stroke-width="1.5" opacity="0.6"/>
+    <text x="790" y="352" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="700" fill="#ffffff">Dead Letter</text>
+    <text x="790" y="368" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="700" fill="#ffffff">Queue (DLQ)</text>
+    <text x="790" y="384" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#DD344C">after max retries</text>
+  </g>
+
+  <!-- CloudWatch Alert -->
+  <g filter="url(#shadow)">
+    <rect x="900" y="295" width="130" height="110" rx="8" fill="#1e2f3d" stroke="#FF9900" stroke-width="2"/>
+    <rect x="900" y="295" width="130" height="30" rx="8" fill="url(#awsOrange)"/>
+    <rect x="900" y="315" width="130" height="10" fill="url(#awsOrange)"/>
+    <!-- Bell icon -->
+    <path d="M958 304 Q965 298 972 304 L975 316 Q965 320 955 316 Z" fill="#ffffff" opacity="0.9"/>
+    <ellipse cx="965" cy="319" rx="4" ry="2" fill="#ffffff" opacity="0.7"/>
+    <text x="965" y="355" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="700" fill="#ffffff">CloudWatch</text>
+    <text x="965" y="371" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="700" fill="#ffffff">Alarm</text>
+    <text x="965" y="387" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#FF9900">🔔 alert team</text>
+  </g>
+
+  <!-- Arrow Lambda → DLQ (max retries exceeded) -->
+  <line x1="632" y1="350" x2="718" y2="350" stroke="#DD344C" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#arrRed)"/>
+  <text x="675" y="342" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#DD344C">max retries</text>
+
+  <!-- Arrow DLQ → CloudWatch -->
+  <line x1="862" y1="350" x2="898" y2="350" stroke="#FF9900" stroke-width="2" marker-end="url(#arrOrange)"/>
+
+  <!-- Idempotency note -->
+  <rect x="60" y="295" width="200" height="110" rx="8" fill="#0d2137" stroke="#3F8624" stroke-width="1.5" stroke-dasharray="4,2"/>
+  <text x="160" y="330" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="700" fill="#3F8624">⚡ Idempotency</text>
+  <text x="160" y="350" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#8ab4d4">Consumer must be</text>
+  <text x="160" y="366" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#8ab4d4">idempotent — message</text>
+  <text x="160" y="382" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#8ab4d4">may be delivered</text>
+  <text x="160" y="398" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#8ab4d4">more than once</text>
+
+  <!-- Labels for rows -->
+  <text x="35" y="160" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#3F8624" transform="rotate(-90,35,160)">SUCCESS</text>
+  <text x="35" y="360" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#DD344C" transform="rotate(-90,35,360)">FAILURE</text>
+</svg>

@@ -9,7 +9,10 @@
       "WebFetch(domain:galaxy.ai)",
       "WebFetch(domain:ytscribe.com)",
       "WebFetch(domain:medium.com)",
-      "Bash(curl -s https://api.github.com/repos/gohugoio/hugo/releases/latest)"
+      "Bash(curl -s https://api.github.com/repos/gohugoio/hugo/releases/latest)",
+      "Bash(python3 -c \"import PIL; print\\('PIL ok'\\)\")",
+      "Bash(python3 -c \"import xml.etree.ElementTree; print\\('xml ok'\\)\")",
+      "Bash(hugo --quiet)"
     ]
   }
 }

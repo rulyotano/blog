@@ -1,0 +1,236 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f1923"/>
+      <stop offset="100%" style="stop-color:#1a2d3d"/>
+    </linearGradient>
+    <linearGradient id="nodeGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a5f"/>
+      <stop offset="100%" style="stop-color:#0d2137"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+    <marker id="arrowOrange" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#ff9900"/>
+    </marker>
+    <marker id="arrowGreen" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#2ecc71"/>
+    </marker>
+    <marker id="arrowRed" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#e74c3c"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <pattern id="dots" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+    <circle cx="20" cy="20" r="1" fill="#ffffff" opacity="0.06"/>
+  </pattern>
+  <rect width="1200" height="630" fill="url(#dots)"/>
+
+  <!-- =====================================================
+       LAYOUT: boxes 110×110, row1 y=160 row2 y=380
+       Row1 centers x: 175, 365, 555, 745, 935   (gap=190)
+       Row2 centers x: 365, 555, 745
+       ===================================================== -->
+
+  <!-- Row 1 horizontal arrows -->
+  <line x1="231" y1="215" x2="309" y2="215" stroke="#ff9900" stroke-width="3" marker-end="url(#arrowOrange)"/>
+  <line x1="421" y1="215" x2="499" y2="215" stroke="#ff9900" stroke-width="3" marker-end="url(#arrowOrange)"/>
+  <line x1="611" y1="215" x2="689" y2="215" stroke="#ff9900" stroke-width="3" marker-end="url(#arrowOrange)"/>
+  <line x1="801" y1="215" x2="879" y2="215" stroke="#ff9900" stroke-width="3" marker-end="url(#arrowOrange)"/>
+
+  <!-- Vertical arrows row1 → row2 -->
+  <line x1="365" y1="272" x2="365" y2="378" stroke="#2ecc71" stroke-width="2.5" stroke-dasharray="6,3" marker-end="url(#arrowGreen)"/>
+  <line x1="745" y1="272" x2="745" y2="378" stroke="#e74c3c" stroke-width="2.5" stroke-dasharray="6,3" marker-end="url(#arrowRed)"/>
+
+  <!-- Row 2 horizontal arrow -->
+  <line x1="421" y1="435" x2="499" y2="435" stroke="#2ecc71" stroke-width="2.5" stroke-dasharray="6,3" marker-end="url(#arrowGreen)"/>
+
+  <!-- =====================================================
+       NODE: Client  — center (175, 215)
+       Box: x=120 y=160 w=110 h=110
+       ===================================================== -->
+  <g filter="url(#shadow)">
+    <rect x="120" y="160" width="110" height="110" rx="14" fill="url(#nodeGrad)" stroke="#4a90d9" stroke-width="2.5"/>
+    <!-- Monitor icon centered at (175,215), screen 70×46, stand, base -->
+    <rect x="140" y="188" width="70" height="46" rx="4" fill="#4a90d9" opacity="0.18"/>
+    <rect x="140" y="188" width="70" height="46" rx="4" fill="none" stroke="#4a90d9" stroke-width="2.5"/>
+    <line x1="151" y1="200" x2="199" y2="200" stroke="#4a90d9" stroke-width="2" opacity="0.7"/>
+    <line x1="151" y1="209" x2="193" y2="209" stroke="#4a90d9" stroke-width="2" opacity="0.5"/>
+    <line x1="151" y1="218" x2="185" y2="218" stroke="#4a90d9" stroke-width="2" opacity="0.35"/>
+    <line x1="175" y1="234" x2="175" y2="247" stroke="#4a90d9" stroke-width="2.5"/>
+    <line x1="161" y1="247" x2="189" y2="247" stroke="#4a90d9" stroke-width="2.5"/>
+  </g>
+  <text x="175" y="288" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="600" fill="#ffffff">Client</text>
+
+  <!-- =====================================================
+       NODE: Service A  — center (365, 215)
+       Box: x=310 y=160 w=110 h=110
+       ===================================================== -->
+  <g filter="url(#shadow)">
+    <rect x="310" y="160" width="110" height="110" rx="14" fill="url(#nodeGrad)" stroke="#ff9900" stroke-width="2.5"/>
+    <!-- Gear centered at (365,215), outer r=32, inner r=13 -->
+    <g transform="translate(365,215)">
+      <circle r="32" fill="none" stroke="#ff9900" stroke-width="3"/>
+      <circle r="13" fill="#ff9900" opacity="0.25"/>
+      <circle r="13" fill="none" stroke="#ff9900" stroke-width="2.5"/>
+      <!-- 8 teeth: stroke-linecap=round, stroke-width=5, from r=32 outward 9px -->
+      <line x1="0" y1="-32" x2="0" y2="-41" stroke="#ff9900" stroke-width="5" stroke-linecap="round"/>
+      <line x1="0" y1="32"  x2="0" y2="41"  stroke="#ff9900" stroke-width="5" stroke-linecap="round"/>
+      <line x1="-32" y1="0" x2="-41" y2="0" stroke="#ff9900" stroke-width="5" stroke-linecap="round"/>
+      <line x1="32"  y1="0" x2="41"  y2="0" stroke="#ff9900" stroke-width="5" stroke-linecap="round"/>
+      <line x1="-22.6" y1="-22.6" x2="-28.9" y2="-28.9" stroke="#ff9900" stroke-width="5" stroke-linecap="round"/>
+      <line x1="22.6"  y1="-22.6" x2="28.9"  y2="-28.9" stroke="#ff9900" stroke-width="5" stroke-linecap="round"/>
+      <line x1="-22.6" y1="22.6"  x2="-28.9" y2="28.9"  stroke="#ff9900" stroke-width="5" stroke-linecap="round"/>
+      <line x1="22.6"  y1="22.6"  x2="28.9"  y2="28.9"  stroke="#ff9900" stroke-width="5" stroke-linecap="round"/>
+    </g>
+  </g>
+  <text x="365" y="288" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="600" fill="#ffffff">Service A</text>
+  <text x="365" y="305" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#2ecc71">+ Outbox</text>
+
+  <!-- =====================================================
+       NODE: Message Queue  — center (555, 215)
+       Box: x=500 y=160 w=110 h=110
+       ===================================================== -->
+  <g filter="url(#shadow)">
+    <rect x="500" y="160" width="110" height="110" rx="14" fill="url(#nodeGrad)" stroke="#9b59b6" stroke-width="2.5"/>
+    <!-- 3 queue bars centered, each 70×16, gap 6 -->
+    <rect x="520" y="184" width="70" height="16" rx="4" fill="#9b59b6" opacity="0.9"/>
+    <rect x="520" y="207" width="70" height="16" rx="4" fill="#9b59b6" opacity="0.62"/>
+    <rect x="520" y="230" width="70" height="16" rx="4" fill="#9b59b6" opacity="0.38"/>
+  </g>
+  <text x="555" y="288" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="600" fill="#ffffff">Message Queue</text>
+
+  <!-- =====================================================
+       NODE: Service B  — center (745, 215)
+       Box: x=690 y=160 w=110 h=110
+       ===================================================== -->
+  <g filter="url(#shadow)">
+    <rect x="690" y="160" width="110" height="110" rx="14" fill="url(#nodeGrad)" stroke="#ff9900" stroke-width="2.5"/>
+    <g transform="translate(745,215)">
+      <circle r="32" fill="none" stroke="#ff9900" stroke-width="3"/>
+      <circle r="13" fill="#ff9900" opacity="0.25"/>
+      <circle r="13" fill="none" stroke="#ff9900" stroke-width="2.5"/>
+      <line x1="0" y1="-32" x2="0" y2="-41" stroke="#ff9900" stroke-width="5" stroke-linecap="round"/>
+      <line x1="0" y1="32"  x2="0" y2="41"  stroke="#ff9900" stroke-width="5" stroke-linecap="round"/>
+      <line x1="-32" y1="0" x2="-41" y2="0" stroke="#ff9900" stroke-width="5" stroke-linecap="round"/>
+      <line x1="32"  y1="0" x2="41"  y2="0" stroke="#ff9900" stroke-width="5" stroke-linecap="round"/>
+      <line x1="-22.6" y1="-22.6" x2="-28.9" y2="-28.9" stroke="#ff9900" stroke-width="5" stroke-linecap="round"/>
+      <line x1="22.6"  y1="-22.6" x2="28.9"  y2="-28.9" stroke="#ff9900" stroke-width="5" stroke-linecap="round"/>
+      <line x1="-22.6" y1="22.6"  x2="-28.9" y2="28.9"  stroke="#ff9900" stroke-width="5" stroke-linecap="round"/>
+      <line x1="22.6"  y1="22.6"  x2="28.9"  y2="28.9"  stroke="#ff9900" stroke-width="5" stroke-linecap="round"/>
+    </g>
+  </g>
+  <text x="745" y="288" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="600" fill="#ffffff">Service B</text>
+  <text x="745" y="305" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#8ab4d4">Consumer</text>
+
+  <!-- =====================================================
+       NODE: Database  — center (935, 215)
+       Box: x=880 y=160 w=110 h=110
+       ===================================================== -->
+  <g filter="url(#shadow)">
+    <rect x="880" y="160" width="110" height="110" rx="14" fill="url(#nodeGrad)" stroke="#4a90d9" stroke-width="2.5"/>
+    <g transform="translate(935,215)">
+      <!-- top ellipse -->
+      <ellipse cx="0" cy="-22" rx="30" ry="11" fill="#4a90d9" opacity="0.25"/>
+      <ellipse cx="0" cy="-22" rx="30" ry="11" fill="none" stroke="#4a90d9" stroke-width="2.5"/>
+      <!-- sides -->
+      <line x1="-30" y1="-22" x2="-30" y2="22" stroke="#4a90d9" stroke-width="2.5"/>
+      <line x1="30"  y1="-22" x2="30"  y2="22" stroke="#4a90d9" stroke-width="2.5"/>
+      <!-- bottom ellipse -->
+      <ellipse cx="0" cy="22" rx="30" ry="11" fill="#0d2137"/>
+      <ellipse cx="0" cy="22" rx="30" ry="11" fill="none" stroke="#4a90d9" stroke-width="2.5"/>
+      <!-- horizontal data lines -->
+      <line x1="-22" y1="-8"  x2="22" y2="-8"  stroke="#4a90d9" stroke-width="1.5" opacity="0.4"/>
+      <line x1="-22" y1="5"   x2="22" y2="5"   stroke="#4a90d9" stroke-width="1.5" opacity="0.4"/>
+    </g>
+  </g>
+  <text x="935" y="288" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="600" fill="#ffffff">Database</text>
+
+  <!-- =====================================================
+       NODE: Outbox Table  — center (365, 435)
+       Box: x=310 y=380 w=110 h=110
+       ===================================================== -->
+  <g filter="url(#shadow)">
+    <rect x="310" y="380" width="110" height="110" rx="14" fill="url(#nodeGrad)" stroke="#2ecc71" stroke-width="2.5" stroke-dasharray="7,3"/>
+    <g transform="translate(365,435)">
+      <!-- table outer rect -->
+      <rect x="-34" y="-30" width="68" height="56" rx="3" fill="none" stroke="#2ecc71" stroke-width="2"/>
+      <!-- header fill -->
+      <rect x="-34" y="-30" width="68" height="16" rx="3" fill="#2ecc71" opacity="0.35"/>
+      <!-- column divider -->
+      <line x1="0" y1="-30" x2="0" y2="26" stroke="#2ecc71" stroke-width="1.5" opacity="0.5"/>
+      <!-- row dividers -->
+      <line x1="-34" y1="-14" x2="34" y2="-14" stroke="#2ecc71" stroke-width="1.5" opacity="0.35"/>
+      <line x1="-34" y1="0"   x2="34" y2="0"   stroke="#2ecc71" stroke-width="1.5" opacity="0.35"/>
+      <line x1="-34" y1="14"  x2="34" y2="14"  stroke="#2ecc71" stroke-width="1.5" opacity="0.35"/>
+      <!-- pending dots in rows -->
+      <circle cx="-17" cy="-7"  r="3" fill="#2ecc71" opacity="0.8"/>
+      <circle cx="-17" cy="7"   r="3" fill="#2ecc71" opacity="0.55"/>
+      <circle cx="-17" cy="20"  r="3" fill="#2ecc71" opacity="0.35"/>
+    </g>
+  </g>
+  <text x="365" y="507" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="600" fill="#ffffff">Outbox Table</text>
+  <text x="365" y="524" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#2ecc71">pending records</text>
+
+  <!-- =====================================================
+       NODE: Background Worker  — center (555, 435)
+       Box: x=500 y=380 w=110 h=110
+       ===================================================== -->
+  <g filter="url(#shadow)">
+    <rect x="500" y="380" width="110" height="110" rx="14" fill="url(#nodeGrad)" stroke="#2ecc71" stroke-width="2.5"/>
+    <g transform="translate(555,435)">
+      <circle r="36" fill="none" stroke="#2ecc71" stroke-width="2.5"/>
+      <circle r="4"  fill="#2ecc71"/>
+      <!-- hour hand (12 o'clock) -->
+      <line x1="0" y1="0" x2="0" y2="-26" stroke="#2ecc71" stroke-width="3" stroke-linecap="round"/>
+      <!-- minute hand (3 o'clock area) -->
+      <line x1="0" y1="0" x2="22" y2="14" stroke="#2ecc71" stroke-width="2.5" stroke-linecap="round"/>
+      <!-- tick marks -->
+      <line x1="0"   y1="-36" x2="0"   y2="-30" stroke="#2ecc71" stroke-width="2" opacity="0.55"/>
+      <line x1="0"   y1="36"  x2="0"   y2="30"  stroke="#2ecc71" stroke-width="2" opacity="0.55"/>
+      <line x1="-36" y1="0"   x2="-30" y2="0"   stroke="#2ecc71" stroke-width="2" opacity="0.55"/>
+      <line x1="36"  y1="0"   x2="30"  y2="0"   stroke="#2ecc71" stroke-width="2" opacity="0.55"/>
+    </g>
+  </g>
+  <text x="555" y="507" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="600" fill="#ffffff">Background</text>
+  <text x="555" y="524" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="600" fill="#ffffff">Worker</text>
+
+  <!-- =====================================================
+       NODE: Dead Letter Queue  — center (745, 435)
+       Box: x=690 y=380 w=110 h=110
+       ===================================================== -->
+  <g filter="url(#shadow)">
+    <rect x="690" y="380" width="110" height="110" rx="14" fill="#1f0d0d" stroke="#e74c3c" stroke-width="2.5"/>
+    <g transform="translate(745,435)">
+      <!-- 3 bars -->
+      <rect x="-34" y="-30" width="68" height="16" rx="4" fill="#e74c3c" opacity="0.85"/>
+      <rect x="-34" y="-9"  width="68" height="16" rx="4" fill="#e74c3c" opacity="0.55"/>
+      <rect x="-34" y="12"  width="68" height="16" rx="4" fill="#e74c3c" opacity="0.3"/>
+      <!-- X over first bar -->
+      <line x1="-22" y1="-27" x2="-10" y2="-17" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" opacity="0.85"/>
+      <line x1="-10" y1="-27" x2="-22" y2="-17" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" opacity="0.85"/>
+    </g>
+  </g>
+  <text x="745" y="507" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="600" fill="#ffffff">Dead Letter</text>
+  <text x="745" y="524" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="600" fill="#ffffff">Queue</text>
+
+  <!-- Decorative shield (right, subtle) -->
+  <g opacity="0.11">
+    <path d="M 1095 350 L 1155 325 L 1155 400 Q 1155 448 1095 470 Q 1035 448 1035 400 L 1035 325 Z" fill="#ff9900"/>
+    <path d="M 1078 402 L 1092 416 L 1118 388" stroke="#ffffff" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Decorative circuit lines (left, subtle) -->
+  <g opacity="0.08">
+    <line x1="30" y1="370" x2="90" y2="370" stroke="#4a90d9" stroke-width="1.5"/>
+    <line x1="90" y1="370" x2="90" y2="450" stroke="#4a90d9" stroke-width="1.5"/>
+    <line x1="90" y1="450" x2="40" y2="450" stroke="#4a90d9" stroke-width="1.5"/>
+    <circle cx="90" cy="370" r="4" fill="#4a90d9"/>
+    <circle cx="40" cy="450" r="4" fill="#4a90d9"/>
+    <line x1="30" y1="410" x2="70" y2="410" stroke="#ff9900" stroke-width="1.5"/>
+    <circle cx="70" cy="410" r="3" fill="#ff9900"/>
+  </g>
+</svg>
